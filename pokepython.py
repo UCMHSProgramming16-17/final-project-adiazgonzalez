@@ -11,9 +11,9 @@ df =df[df['power'] != '—']
 
 print(df)
 
-pokebar= Bar(df, 'type', values='power', agg = 'count', title= "Number of Moves per Type")
+pokebar= Bar(df, 'type', values='power', agg = 'count', title= "Number of Moves per Type", color='blue')
 
-pokescatter= Scatter(df, x= "pp", y="power", title= "Power Relative to PP of Pokemon Moves")
+pokescatter= Scatter(df, x= "pp", y="power", title= "Power Relative to PP of Pokemon Moves", color="violet")
 
 output_file('pokebar.html')
 save(pokebar)
